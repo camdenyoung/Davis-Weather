@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optical Audio - Weather Stations</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+            overflow-y: auto; /* Allow vertical scrolling */
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+        .iframe-container {
+            width: 50%; /* 50% of container width */
+            height: 50vh; /* 50% of viewport height */
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        /* Responsive layout for small screens */
+        @media (max-width: 768px) {
+            .iframe-container {
+                width: 100%; /* Full width on small screens */
+                height: 50vh; /* Adjust height for visibility */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="iframe-container">
+            <iframe src="https://www.weatherlink.com/embeddablePage/show/821cb1327bfa42a09a40c9007a07ac89/fullscreen" frameborder="0"></iframe>
+        </div>
+        <div class="iframe-container">
+            <iframe src="https://www.weatherlink.com/embeddablePage/show/e809e1e94876445f91029b34cfcd3188/fullscreen" frameborder="0"></iframe>
+        </div>
+        <div class="iframe-container">
+            <iframe src="https://www.weatherlink.com/embeddablePage/show/9be0ff6a661c43938294740a187f94e8/fullscreen" frameborder="0"></iframe>
+        </div>
+        <div class="iframe-container">
+            <iframe src="https://www.weatherlink.com/embeddablePage/show/a01548a3c87747c1af7a2895f13658b3/fullscreen" frameborder="0"></iframe>
+        </div>
+    </div>
+</body>
+</html>
